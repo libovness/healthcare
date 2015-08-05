@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>App</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <%= stylesheet_link_tag 'application', 'http://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700', type='text/css' %>
+</head>
+<body>
+  <div class="container">     
+    <div class="row" id="preamble">
+      <div class="col-md-12">
+        <h1>On Digital Healthcare</h1>
+        <div id="byline">
+          <p>By <span class="author" id="jonathan"><%= image_tag("libovness.png", :class => 'avatar') %>libovness</span> of Union Square Ventures &amp;</br><span class="author" id="angela"><%= image_tag("angela.png", :class => 'avatar') %>ATKingyens</span> of Version One Ventures</p>
+        </div>
+        <h4 id="input-caption">Get notified as each part is published</h4>
+        <form>
+          <input type="email" value="email@example.com">
+          <input type="submit" value="Subscribe">
+        </form>
+      </div>
+    </div>
+    <div class="row part-cnt">
+      <div class="col-md-2 part part-0">
+         <h2 id="part-intro">Intro</h2>
+      </div>
+      <div class="col-md-2 part part-1 part-middle">
+        <h2>Part I</h2>
+        <h6 class="sub-part">Mobile<br>endpoints</h6>
+      </div>    
+      <div class="col-md-2 part part-2 part-middle">
+        <h2>Part II</h2>
+        <h6 class="sub-part">Health<br>data</h6>
+      </div>    
+      <div class="col-md-2 part part-3 part-middle">
+        <h2>Part III</h2>
+        <h6 class="sub-part">Health<br>apps</h6>
+      </div>    
+      <div class="col-md-2 part part-4 part-middle">
+        <h2>Part VI</h2>
+        <h6 class="sub-part">Networks &amp; marketplaces</h6>
+      </div>
+      <div class="col-md-2 part part-6 part-end" >
+         <h2 id="part-outro">Outro</h2>
+      </div>            
+    </div>
+    <div class="row">
+      <div class="col-md-12" id="content">
+        <h1>Introduction</h1>
+        <p>We represent two venture capital firms that are keenly interested in the healthcare space. While we maintain a traditional market map (i.e. a single Keynote slide collating dozens of company logos squeezed into labeled boxes), we have more questions than answers about how this market will shake out.</p>
+        <p>A traditional market map of healthcare startups suggests a certain kind of stasis, a notion that we've figured out which present-day companies and models will battle it out and win on execution.  A market map would also belie how uncertain and immature this market is, and how transformative this market could really be.</p>
+        <h2>How much care can we provide via the phone?</h2>
+        <p>We represent two venture capital firms that are keenly interested in the healthcare space. While we maintain a traditional market map (i.e. a single Keynote slide collating dozens of company logos squeezed into labeled boxes), we have more questions than answers about how this market will shake out.</p>
+        <%= yield %>
+    </div>
+  </div>
+</body>
+</html>
