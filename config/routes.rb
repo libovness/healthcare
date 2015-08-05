@@ -1,8 +1,12 @@
 Rails.application.routes.draw do
+  resources :parts
   resources :posts
 
-  root :to => "posts#index"
-  
+  root :to => "parts#index"
+
+  post 'mcsubscribe/subscribe' => 'mcsubscribe#subscribe'
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

@@ -1,0 +1,32 @@
+I"(function() {
+  $(document).ready(function() {
+    var data;
+    $('#email').focus(function() {
+      if ($('#email').val() === 'email@example.com') {
+        return $('#email').val('');
+      }
+    });
+    $('#subscribe').click(function() {
+      var email;
+      return email = $('#email').val();
+    });
+    return $.ajax({
+      method: "POST",
+      url: "/parts/register"
+    }, data = {
+      "email_address": email,
+      "output": "json"
+    }, {
+      dataType: "JSON",
+      contentType: "application/json; charset=utf-8",
+      error: function(jqXHR, textStatus, errorThrown) {
+        return alert("AJAX Error: " + textStatus);
+      },
+      success: function(data, textStatus, jqXHR) {
+        return alert("Successful AJAX call: " + data);
+      }
+    });
+  });
+
+}).call(this);
+:ET

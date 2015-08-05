@@ -1,0 +1,7 @@
+I"d(function() {
+  $('input').click()(function() {
+    return alert("hey");
+  });
+
+}).call(this);
+:ET

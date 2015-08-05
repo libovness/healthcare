@@ -1,0 +1,9 @@
+I"“(function() {
+  $(document).ready(function() {
+    return $('input').focus()(function() {
+      return alert('hey');
+    });
+  });
+
+}).call(this);
+:ET

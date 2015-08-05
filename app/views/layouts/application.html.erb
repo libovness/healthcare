@@ -15,10 +15,10 @@
         <div id="byline">
           <p>By <span class="author" id="jonathan"><%= image_tag("libovness.png", :class => 'avatar') %>libovness</span> of Union Square Ventures &amp;</br><span class="author" id="angela"><%= image_tag("angela.png", :class => 'avatar') %>ATKingyens</span> of Version One Ventures</p>
         </div>
-        <form>
-          <input type="email" value="email@example.com">
-          <input type="submit" value="Subscribe">
-        </form>
+        <%= form_tag('/mcsubscribe/subscribe', method: "post", id: 'mcsubscribe',remote: true) do %>
+          <input type="email" value="email@example.com" id="email">
+          <%= submit_tag("Subscribe") %>
+        <% end %>
         <h4 id="input-caption">&nbsp;Sign up to get notified as each part is published</h4>
       </div>
     </div>
@@ -48,11 +48,6 @@
     </div>
     <div class="row">
       <div class="col-md-12" id="content">
-        <h1>Introduction</h1>
-        <p>We represent two venture capital firms that are keenly interested in the healthcare space. While we maintain a traditional market map (i.e. a single Keynote slide collating dozens of company logos squeezed into labeled boxes), we have more questions than answers about how this market will shake out.</p>
-        <p>A traditional market map of healthcare startups suggests a certain kind of stasis, a notion that we've figured out which present-day companies and models will battle it out and win on execution.  A market map would also belie how uncertain and immature this market is, and how transformative this market could really be.</p>
-        <h2>How much care can we provide via the phone?</h2>
-        <p>We represent two venture capital firms that are keenly interested in the healthcare space. While we maintain a traditional market map (i.e. a single Keynote slide collating dozens of company logos squeezed into labeled boxes), we have more questions than answers about how this market will shake out.</p>
         <%= yield %>
     </div>
   </div>

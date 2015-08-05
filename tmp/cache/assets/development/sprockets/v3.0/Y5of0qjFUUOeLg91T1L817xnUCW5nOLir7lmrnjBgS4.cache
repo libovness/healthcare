@@ -1,0 +1,26 @@
+I"3(function() {
+  $(document).ready(function() {
+    var data;
+    $('#email').focus(function() {
+      if ($('#email').val() === 'email@example.com') {
+        return $('#email').val('');
+      }
+    });
+    $('#subscribe').click(function() {
+      var email;
+      return email = $('#email').val();
+    });
+    return $.ajax({
+      method: "POST",
+      url: "/parts/register"
+    }, data = {
+      "email_address": email,
+      "output": "json"
+    }, {
+      dataType: "JSON",
+      contentType: "application/json; charset=utf-8"
+    });
+  });
+
+}).call(this);
+:ET

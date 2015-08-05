@@ -44,7 +44,7 @@ input[type="email"] {
 	padding: 15px;
 }
 
-input[type="submit"] {
+input#subscribe {
 	margin-left:-112px;
 	background-color:#5AAFCC;
 	border-radius:3px;
@@ -61,15 +61,15 @@ h4#input-caption {
 }
 
 div.part-cnt {
-	margin-top: 71px;
-	margin-bottom: 99px;
+	margin-top: 103px;
+	margin-bottom: 51px;
 	text-align:center;
 }
 
 div.part h2 {
 	font-weight:600;
 	margin-bottom:8px;
-	line-height:11px;
+	line-height:13px;
 	font-size:31px;
 }
 
@@ -126,9 +126,23 @@ h6 {
 
 div#content {
 	background-color:#fff;
-	height:1200px;
 	border-radius: 6px;
 	padding: 98px 155px;
 	color:#000;
 	box-shadow: 0px 1px 2px 1px rgba(0,0,0,0.3);
+	margin-bottom:80px;
+}
+
+div#content img {
+	margin: 27px auto 11px auto;
+	text-align:center;
+}
+
+span.caption {
+	font-size:16px;
+	font-weight:600;
+	text-align:center;
+	line-height: 24px;
+	display:block;
+	margin: 0 auto 19px auto;
 }

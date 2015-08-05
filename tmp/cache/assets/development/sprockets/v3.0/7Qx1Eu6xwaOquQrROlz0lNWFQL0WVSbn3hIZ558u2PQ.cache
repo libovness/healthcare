@@ -1,0 +1,11 @@
+I"Ó(function() {
+  $(document).ready(function() {
+    return $('#email').focus(function() {
+      if (this.val() === 'email@example.com') {
+        return $('#email').val('');
+      }
+    });
+  });
+
+}).call(this);
+:ET

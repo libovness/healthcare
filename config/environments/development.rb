@@ -38,4 +38,8 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+
+  MAILCHIMP_API_KEY = "9796bdf9880bced3a60e7d6f551d3723-us7"
+  MAILCHIMP_LIST_ID = "8e24d21e11"
+
 end

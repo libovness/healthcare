@@ -32,6 +32,11 @@ gem 'bootstrap-sass'
 gem 'devise'
 # login #
 
+gem 'redcarpet'
+# Markdown #
+
+gem "mailchimp-api"
+
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
