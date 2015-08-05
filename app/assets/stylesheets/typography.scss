@@ -32,11 +32,19 @@ div.preamble h1 {
 div#byline p {
 	font-size: 23px;
 	line-height:30px;
+	font-weight:300;
 }
 
 h4 {
 	font-size:20px;
+}
+
+h4#input-caption {
 	font-weight:400;
+	font-size:13px;
+	letter-spacing: 0.02em;
+	opacity:0.8;
+	margin-top:11px;
 }
 
 input {
