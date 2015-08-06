@@ -17,7 +17,7 @@
         </div>
         <%= form_tag('/mcsubscribe/subscribe', method: "post", id: 'mcsubscribe',remote: true) do %>
           <input type="email" value="email@example.com" id="email">
-          <%= submit_tag("Subscribe") %>
+          <%= submit_tag("Subscribe", id: 'subscribe') %>
         <% end %>
         <h4 id="input-caption">&nbsp;Sign up to get notified as each part is published</h4>
       </div>
