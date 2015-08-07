@@ -75,6 +75,18 @@ input {
 	color:#000;
 }
 
+input.active-input-email {
+	color:#000 !important;
+}
+
+h4.active-input-caption {
+	opacity:1 !important;
+}
+
+a:hover {
+	background-color: none;
+}
+
 @media (max-width: 767px) {
 
 	h1 {
