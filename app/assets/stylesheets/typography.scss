@@ -67,21 +67,26 @@ input {
 @media (max-width: 767px) {
 
 	h1 {
-		font-size:64px;
+		font-size:84px;
 		margin-bottom:12px;
 	}
 
 	div#byline p {
-		font-size: 46px;
-		line-height:49px;
+		font-size: 42px;
+		line-height:64px;
 		font-weight:400;
 	}
 
+	div#byline {
+		margin-bottom:80px;
+	}
+
 	h4#input-caption {
-		font-size:24px;
+		font-size:36px;
 		letter-spacing: 0.02em;
 		opacity:0.8;
-		margin-top:19px;
+		margin-top:12px;
+		text-align:left;
 	}
 
 	#content h2 {
@@ -94,19 +99,26 @@ input {
 		margin-bottom:52px;
 	}
 
-	#content p {
-		font-size:42px;
-		line-height:74px;
+	#content p, #content ul, #content ol {
+		font-size:40px;
+		line-height:64px;
+		margin-bottom:44px;
 	}
 
 	span.caption {
-		font-size:32px;
+		font-size:36px;
 		line-height:150%;
 	}
 
 	img {
 		margin: 0 auto;
 		text-align:center;
+	}
+
+	span.author {
+		font-size:32px;
+		border-radius:100px;
+		padding: 4px 14px;
 	}
 
 }

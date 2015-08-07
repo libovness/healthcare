@@ -1,7 +1,0 @@
-I"d(function() {
-  $('input').focus()(function() {
-    return alert("hey");
-  });
-
-}).call(this);
-:ET

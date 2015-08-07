@@ -49,10 +49,38 @@ body {
   line-height: 18px;
 }
 
+.ui-page-theme-a {
+  background-color: $red !important;
+  border:none !important;
+  text-shadow:none !important;
+}
+
+.ui-page-theme-a .ui-body-inherit {
+  
+}
+
+.ui-input-text {
+  margin:0 auto !important;
+  width:340px;
+}
+
+.ui-shadow-inset {
+  box-shadow:none;
+}
+
 p, ol, ul, td {
   font-family: worksans-regular-webfont, 'Work Sans' helvetica, sans-serif;
   font-size: 18px;
   line-height: 18px;
+  color:#fff;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  color:#fff;
+}
+
+#content p, #content ol, #content ul, #content td, #content h1, #content h2, #content h3, #content h4, #content h5, #content h6 {
+  color: #000;
 }
 
 pre {
@@ -80,4 +108,8 @@ div {
   }
 }
 
-
+select {
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+}
