@@ -1,9 +1,9 @@
 $red: #F45537;
 
-
 h1 {
 	font-size:48px;
 	font-weight:600;
+	font-family:'worksans-semibold-webfont';
 }
 
 div#preamble, div.part-cnt {
@@ -24,6 +24,7 @@ div.preamble h1 {
 #content h2 {
 	font-size: 23px;
 	font-weight: 600;
+	font-family:'worksans-semibold-webfont';
 	line-height:32px;
 	margin-top:0px;
 	letter-spacing:0.01em;
@@ -55,7 +56,7 @@ h4#input-caption {
 }
 
 input {
-	font-family: 'Work Sans';
+	font-family: worksans-regular-webfont;
 }
 
 #content li {
