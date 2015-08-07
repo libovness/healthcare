@@ -179,6 +179,10 @@ select#mobile-nav {
 	display:none;
 }
 
+div#content a {
+	color: $red;
+}
+
 @media (max-width: 767px) {
 
 	div#preamble {
