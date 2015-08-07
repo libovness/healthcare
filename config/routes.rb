@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   resources :parts
   resources :posts
 
-  root :to => "parts#show", :id => 1
+  root :to => "parts#show", :id => 0
 
   post 'mcsubscribe/subscribe' => 'mcsubscribe#subscribe'
 
