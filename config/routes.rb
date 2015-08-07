@@ -2,10 +2,25 @@ Rails.application.routes.draw do
   resources :parts
   resources :posts
 
-  root :to => "parts#index"
+  root :to => "parts#show", :id => 1
 
   post 'mcsubscribe/subscribe' => 'mcsubscribe#subscribe'
 
+  get 'intro' => 'parts#show', :id => 0
+
+  get 'part-I' => 'parts#show', :id => 1
+
+  get 'part-II' => 'parts#show', :id => 2
+
+  get 'part-III' => 'parts#show', :id => 3
+
+  get 'part-IV' => 'parts#show', :id => 4
+
+  get 'outro' => 'parts#show', :id => 5
+
+  get 'posts' => 'posts#index'
+
+  get 'parts' => 'parts#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

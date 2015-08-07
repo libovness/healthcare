@@ -1,6 +1,18 @@
-<h1><%= @part.part_name %></h1>
-<% @posts.each do |post| %>
-	<h2><%= post.title %></h2>
-	<%= markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML, :autolink => true)
-        markdown.render(post.body).html_safe %>
-<% end %>
+<div class="row" id="preamble">
+    <div class="col-md-12">
+        <%= render 'byline_and_form' %>
+    </div>
+</div>
+<div class="row part-cnt">
+<%= render 'nav' %>
+</div>
+<div class="row">
+  <div class="col-md-12" id="content">
+    <h1><%= @part.part_name %></h1>
+  	<% @posts.each do |post| %>
+  		<h2><%= post.title %></h2>
+  		<%= markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML, :autolink => true)
+  	        markdown.render(post.body).html_safe %>
+  	<% end %>
+  </div>
+</div>

@@ -1,26 +1,15 @@
 <p id="notice"><%= notice %></p>
-
-<h1>Listing Parts</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Part name</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
+<div class="row">
+  <div class="col-md-12" id="content">
     <% @parts.each do |part| %>
-      <tr>
-        <td><%= part.part_name %></td>
-        <td><%= link_to 'Show', part %></td>
-        <td><%= link_to 'Edit', edit_part_path(part) %></td>
-        <td><%= link_to 'Destroy', part, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+      <h2><%= part.part_name %></h2>
+      <%= link_to 'Show', part %>
+      <%= link_to 'Edit', edit_part_path(part) %>
+      <%= link_to 'Destroy', part, method: :delete, data: { confirm: 'Are you sure?' } %>
+      <br><br><br><br>
     <% end %>
-  </tbody>
-</table>
+  </div>
+</div>
 
 <br>
 

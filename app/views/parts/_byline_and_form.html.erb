@@ -1,0 +1,9 @@
+<h1>On Digital Healthcare</h1>
+<div id="byline">
+  <p>By <span class="author" id="jonathan"><%= image_tag("libovness.png", :class => 'avatar') %>libovness</span> of Union Square Ventures &amp;</br><span class="author" id="angela"><%= image_tag("angela.png", :class => 'avatar') %>ATKingyens</span> of Version One Ventures</p>
+</div>
+<%= form_tag('/mcsubscribe/subscribe', method: "post", id: 'mcsubscribe',remote: true) do %>
+  <input type="email" value="email@example.com" id="email">
+  <%= submit_tag("Subscribe", id: 'subscribe') %>
+<% end %>
+<h4 id="input-caption">&nbsp;Sign up to get notified as each part is published</h4>
