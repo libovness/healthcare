@@ -33,7 +33,8 @@ gem 'devise'
 gem 'redcarpet'
 # Markdown #
 
-gem "mailchimp-api"
+gem 'mailchimp-api'
+
 
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc

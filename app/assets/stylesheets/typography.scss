@@ -61,3 +61,51 @@ input {
 #content li {
 	margin-top:16px;
 }
+
+
+@media (max-width: 767px) {
+
+	h1 {
+		font-size:64px;
+		margin-bottom:12px;
+	}
+
+	div#byline p {
+		font-size: 46px;
+		line-height:49px;
+		font-weight:400;
+	}
+
+	h4#input-caption {
+		font-size:24px;
+		letter-spacing: 0.02em;
+		opacity:0.8;
+		margin-top:19px;
+	}
+
+	#content h2 {
+		font-size:48px;
+		line-height:57px;
+		margin-bottom: 15px;
+	}
+
+	#content h1 {
+		margin-bottom:52px;
+	}
+
+	#content p {
+		font-size:42px;
+		line-height:74px;
+	}
+
+	span.caption {
+		font-size:32px;
+		line-height:150%;
+	}
+
+	img {
+		margin: 0 auto;
+		text-align:center;
+	}
+
+}
