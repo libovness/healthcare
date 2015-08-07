@@ -3,6 +3,7 @@ $white: #FFFFFF;
 
 @font-face {
     font-family: 'worksans-medium-webfont';
+    src: font-url('assets/worksans-medium-webfont.eot');
     src: url('worksans-medium-webfont.eot');
     src: url('worksans-medium-webfont.eot?#iefix') format('embedded-opentype'),
          url('worksans-medium-webfont.woff2') format('woff2'),
@@ -15,8 +16,7 @@ $white: #FFFFFF;
 
 @font-face {
     font-family: 'worksans-regular-webfont';
-    src: asset-url('worksans-regular-webfont.eot');
-    src: local('Work Sans');
+    src: font-url('assets/worksans-regular-webfont.eot');
     src: url('worksans-regular-webfont.eot');
     src: url('worksans-regular-webfont.eot?#iefix') format('embedded-opentype'),
          url('worksans-regular-webfont.woff2') format('woff2'),
@@ -29,7 +29,7 @@ $white: #FFFFFF;
 
 @font-face {
     font-family: 'worksans-semibold-webfont';
-    src: asset-url('worksans-semibold-webfont.eot');
+    src: font-url('assets/worksans-semibold-webfont.eot');
     src: local('Work Sans');    
     src: url('worksans-semibold-webfont.eot');
     src: url('worksans-semibold-webfont.eot?#iefix') format('embedded-opentype'),
