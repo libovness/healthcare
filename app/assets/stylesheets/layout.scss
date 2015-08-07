@@ -183,6 +183,10 @@ div#content a {
 	color: $red;
 }
 
+iframe {
+	margin: 27px auto 11px auto;
+}
+
 @media (max-width: 767px) {
 
 	div#preamble {
