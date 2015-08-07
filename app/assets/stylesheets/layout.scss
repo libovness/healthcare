@@ -187,6 +187,15 @@ iframe {
 	margin: 27px auto 11px auto !important;
 }
 
+div#share > iframe, .fb_iframe_widget {
+	float:right;
+	margin-right:20px;
+}
+
+div#share {
+	margin-bottom:40px;
+}
+
 .clearfix:after {
      visibility: hidden;
      display: block;

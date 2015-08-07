@@ -37,6 +37,8 @@ gem 'mailchimp-api'
 
 gem 'disqus_rails'
 
+gem 'social-buttons'
+
 # gem 'jquery_mobile_rails'
 
 # bundle exec rake doc:rails generates the API under doc/api.
