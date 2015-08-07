@@ -14,12 +14,6 @@ class PartsController < ApplicationController
     @posts = @part.posts
   end
 
-  def register 
-    respond_to do |format|
-       @mc.lists.subscribe(ENV["MAILCHIMP_LIST_ID"], {'email' => email})
-    end
-  end
-
   # GET /parts/new
   def new
     @part = Part.new
