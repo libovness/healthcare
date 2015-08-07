@@ -1,4 +1,4 @@
-$red: #F45537;
+$red: #E26449;
 
 .container {
 	width:940px;
@@ -57,7 +57,7 @@ input#subscribe {
 
 h4#input-caption {
 	margin-bottom:11px;
-	font-weight:300;
+	text-shadow:none;
 }
 
 div.part {
@@ -163,7 +163,7 @@ input#post_title {
 	padding: 16px;
 }
 
-textarea:focus {
+textarea:focus, input:focus {
 	outline:none;
 }
 

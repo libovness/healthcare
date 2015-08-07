@@ -1,8 +1,14 @@
 $(document).ready(function(){
- 
+
+  $("input#email").focus(function() {
+    if($("input#email").val() == "email@example.com") {
+      $("input#email").val("");
+    }
+  });
+
   $('form#mcsubscribe')
     .bind("ajax:beforeSend", function(evt, xhr, settings){
-      var $divResponse = $('div#response');
+      var $divResponse = $('h4#caption');
  
       // Update the text of the submit button to let the user know stuff is happening.
       // But first, store the original text of the submit button, so it can be restored when the request is finished.
@@ -12,17 +18,17 @@ $(document).ready(function(){
     })
     .bind("ajax:success", function(evt, data, status, xhr){
       var $form = $(this);
-       var $divResponse = $('div#response');
+       var $divResponse = $('h4#caption');
  
       // Reset fields and any validation errors, so form can be used again, but leave hidden_field values intact.
       $form.find('input[type="email"]').val("");
       $divResponse.html(data.message);
     })
     .bind('ajax:complete', function(evt, xhr, status){
-      var $divResponse = $('div#response');
+      var $divResponse = $('h4#caption');
     })
     .bind("ajax:error", function(evt, xhr, status, error){
-       var $divResponse = $('div#response'),
+       var $divResponse = $('h4#caption'),
           errors,
           errorText,
       errorList;
