@@ -55,7 +55,6 @@ class PostsController < ApplicationController
   # DELETE /posts/1
   # DELETE /posts/1.json
   def destroy
-    before_action :authenticate_user!
     @post.destroy
     respond_to do |format|
       format.html { redirect_to posts_url, notice: 'Post was successfully destroyed.' }
@@ -73,5 +72,5 @@ class PostsController < ApplicationController
     def post_params
       params.require(:post).permit(:title, :body, :part)
     end
-  
+
 end
