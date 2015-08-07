@@ -35,6 +35,8 @@ gem 'redcarpet'
 
 gem 'mailchimp-api'
 
+gem 'disqus_rails'
+
 # gem 'jquery_mobile_rails'
 
 # bundle exec rake doc:rails generates the API under doc/api.
