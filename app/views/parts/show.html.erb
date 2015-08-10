@@ -16,7 +16,7 @@
   	        markdown.render(post.body).html_safe %>
   	<% end %>
     <div id="share" class="clearfix"> 
-      <%= tweet_button(url: 'http://ondigitalhealthcare.com/' + @part.part_name, :count => 'horizontal', text: "On Digital Healthcare", via: "@libovness of @usv and @ATKingyens of @VersionOneVC") %>
+      <%= tweet_button(url: 'http://ondigitalhealthcare.com/' + @part.part_name, :count => 'horizontal', text: "On Digital Healthcare by @libovness of @usv and @ATKingyens of @VersionOneVC") %>
       <%= like_button('1618423025090772') %>
     </div>
     <%- disqus_thread %>
