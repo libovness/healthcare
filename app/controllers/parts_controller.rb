@@ -12,6 +12,7 @@ class PartsController < ApplicationController
   def show
     @part = Part.find(params[:id])
     @posts = @part.posts
+    @page_description = @part.part_name
   end
 
   # GET /parts/new

@@ -8,7 +8,7 @@
 <%= render 'nav' %>
 </div>
 <div class="row">
-  <div class="col-md-12" id="content">
+  <div class="col-md-12 col-md-offset-0 col-sm-10 col-sm-offset-1" id="content">
     <h1><%= @part.part_name %></h1>
   	<% @posts.each do |post| %>
   		<h2><%= post.title %></h2>
