@@ -13,6 +13,7 @@ class PartsController < ApplicationController
     @part = Part.find(params[:id])
     @posts = @part.posts
     @page_description = @part.part_name
+    cookies[:is_subscribed] ? @is_subscribed = true : @is_subscribed = false
   end
 
   # GET /parts/new

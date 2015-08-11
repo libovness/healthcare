@@ -12,6 +12,7 @@ class McsubscribeController < ApplicationController
       begin
        
         @mc.lists.subscribe(@list_id, {'email' => email})
+        cookies[:is_subscribed] = true
          
         respond_to do |format|  
           format.json{render :json => {:message => "Success! Check your email to confirm sign up."}}

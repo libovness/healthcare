@@ -2,7 +2,7 @@
 <div id="byline">
   <p>By <%= link_to('http://twitter.com/libovness') do %><span class="author" id="jonathan"><%= image_tag("libovness.png", :class => 'avatar') %>libovness</span><% end %> of Union Square Ventures &amp;</br><%= link_to('http://twitter.com/ATKingyens') do %><span class="author" id="angela"><%= image_tag("angela.png", :class => 'avatar') %>ATKingyens</span><% end %> of Version One Ventures</p>
 </div>
-<%= form_tag('/mcsubscribe/subscribe', method: "post", id: 'mcsubscribe', class: 'clearfix', remote: true) do %>
+<%= form_tag('/mcsubscribe/subscribe', method: "post", id: 'mcsubscribe', class: 'clearfix #{@is_subscribed ? "hide"}', remote: true) do %>
   <%= email_field(:email, :address, {id: "email", placeholder: "email@example.com"}) %>
   <%= submit_tag("Subscribe", id: 'subscribe') %>
 <% end %>
