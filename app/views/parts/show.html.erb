@@ -12,12 +12,12 @@
     <select name="select-native-1" id="mobile-nav">
         <option value="1">Intro</option>
         <option value="2">Part I: Mobile Endpoints</option>
-        <option value="3">Part II: Health Data</option>
-        <option value="4">Part III: Health Apps</option>
-        <option value="5">Part IV: Networks &amp; Marketplaces</option>
-        <option value="6">Outro</option>
+        <option value="3" disabled>Part II: Health Data</option>
+        <option value="4" disabled>Part III: Health Apps</option>
+        <option value="5" disabled>Part IV: Networks &amp; Marketplaces</option>
+        <option value="6" disabled>Outro</option>
     </select>
-    <!-- <h1><%= @part.part_name %></h1> -->
+    <h1><%= @part.part_name %></h1>
   	<% @posts.each do |post| %>
   		<h2><%= post.title %></h2>
   		<%= markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML, :autolink => true)
