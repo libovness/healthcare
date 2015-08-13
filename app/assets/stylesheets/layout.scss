@@ -148,6 +148,7 @@ div#content {
 div#content img {
 	margin: 27px auto 11px auto;
 	text-align:center;
+	max-width:100%;
 }
 
 span.caption {
@@ -307,9 +308,6 @@ a:hover {
 		font-family: 'worksans-semibold-webfont';
 	}
 
-	div#content img {
-		max-width:100%;
-	}
 
 	div.part-cnt {
 		display:none;
