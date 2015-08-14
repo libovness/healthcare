@@ -11,7 +11,7 @@ class PartsController < ApplicationController
   # GET /parts/1.json
   def show
     @part = Part.find(params[:id])
-    @posts = @part.posts
+    @posts = @part.posts.order("id ASC")
     @page_description = @part.part_name
     cookies[:is_subscribed] ? @is_subscribed = true : @is_subscribed = false
   end
