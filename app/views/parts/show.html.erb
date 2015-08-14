@@ -1,4 +1,10 @@
 <%= disqus_init %>
+<% provide(:title, @part.part_name) %>
+<% provide(:description, @part.part_name) %>
+<% provide(:url, 'http://ondigitalhealthcare.com') %>
+<% provide(:og_description, @part.part_name) %>
+<% provide(:og_title, @part.part_name) %>
+<% provide(:og_type, 'Article') %>
 <div class="row" id="preamble">
     <div class="col-md-12">
         <%= render 'byline_and_form' %>

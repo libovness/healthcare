@@ -12,7 +12,6 @@ class PartsController < ApplicationController
   def show
     @part = Part.find(params[:id])
     @posts = @part.posts.order("id ASC")
-    @page_description = @part.part_name
     cookies[:is_subscribed] ? @is_subscribed = true : @is_subscribed = false
   end
 

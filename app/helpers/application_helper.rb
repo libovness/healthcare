@@ -11,11 +11,11 @@ module ApplicationHelper
   end
 
   def page_description(page_description)
-    base_description = "Two analysts questions about the future of digital healthcare"
+    base_description = "Jonathan Libov of USV and Angela Tran Kingyens of Version One Ventures on digital healthcare"
     if page_description.empty?
       base_description
     else
-      "#{page_description}"
+      base_description + "In this section we look at #{page_description}"
     end
   end
 
@@ -38,11 +38,11 @@ module ApplicationHelper
   end  
 
   def og_description(og_description)
-    base_og_description = "Two analysts questions about the future of digital healthcare."
+    base_og_description = "Jonathan Libov of USV and Angela Tran Kingyens of Version One Ventures on digital healthcare"
     if og_description.empty?
       base_og_description
     else
-      "#{og_description}"
+      base_og_description + "In this section we look at #{og_description}"
     end
   end  
 
