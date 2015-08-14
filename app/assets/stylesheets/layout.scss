@@ -248,7 +248,7 @@ a:hover {
 	img.avatar {
 		height:16px;
 		width:16px;
-		margin-right:5px;
+		margin-right:3px;
 		margin-top:-1px;
 		margin-left:-6px;
 	}	
@@ -296,18 +296,32 @@ a:hover {
 		color:$red;
 		line-height:24px;
 		font-size:16px;
-		background-image: image-url('down-arrow.png');
-		background-repeat: no-repeat;
-		background-position: 252px 18px;
-		background-size:7%;
 		border: 2px solid $red;	
-		padding: 12px 0px 12px 15px;
+		padding: 12px 20px 12px 15px;
 		margin:10px 0 27px 0 !important;
 		-webkit-appearance:none;
 		width:100%;
 		font-family: 'worksans-semibold-webfont';
+		display:inline-block;
 	}
 
+	.custom-selectbox {
+		position:relative;
+		display:inline-block;
+		width:100%;
+	}
+
+	.custom-selectbox:after {
+		content: " ";
+		height:0;
+		width:0;
+		border-left: 9px solid transparent;
+		border-right: 9px solid transparent;
+		border-top: 9px solid $red;
+		position:absolute;
+		right:16px;
+		top:30px;
+	}
 
 	div.part-cnt {
 		display:none;

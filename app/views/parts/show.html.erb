@@ -9,14 +9,16 @@
 </div>
 <div class="row">
   <div class="col-md-12 col-md-offset-0 col-sm-10 col-sm-offset-1" id="content">
-    <select name="select-native-1" id="mobile-nav">
-        <option value="1">Intro</option>
-        <option value="2">Part I: Mobile Endpoints</option>
-        <option value="3" disabled>Part II: Health Data</option>
-        <option value="4" disabled>Part III: Health Apps</option>
-        <option value="5" disabled>Part IV: Networks &amp; Marketplaces</option>
-        <option value="6" disabled>Outro</option>
-    </select>
+    <div class="custom-selectbox">
+      <select name="select-native-1" id="mobile-nav">
+          <option value="1">Intro</option>
+          <option value="2">Part I: Mobile Endpoints</option>
+          <option value="3" disabled>Part II: Health Data</option>
+          <option value="4" disabled>Part III: Health Apps</option>
+          <option value="5" disabled>Part IV: Networks &amp; Marketplaces</option>
+          <option value="6" disabled>Outro</option>
+      </select>
+    </div>
     <h1><%= @part.part_name %></h1>
   	<% @posts.each do |post| %>
   		<h2><%= post.title %></h2>
@@ -25,7 +27,7 @@
   	<% end %>
     <div id="share" class="clearfix"> 
       <%= tweet_button(url: 'http://ondigitalhealthcare.com/' + @part.part_name, :count => 'horizontal', text: "On Digital Healthcare by @libovness of @usv and @ATKingyens of @VersionOneVC") %>
-      <%= like_button(1618423025090772) %>
+      <%= like_button('1618423025090772ad') %>
     </div>
     <%- disqus_thread %>
   </div>
