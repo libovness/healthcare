@@ -13,7 +13,8 @@ class PartsController < ApplicationController
   def show
     @part = Part.find(params[:id])
     @posts = @part.posts.order("id ASC")
-    cookies[:is_subscribed] ? @is_subscribed = true : @is_subscribed = false
+    part_name = @part.part_name
+    @part_name_abb = part_name.sub! ' ','-'
   end
 
   # GET /parts/new
